@@ -6,17 +6,21 @@ A full-stack web application for managing courses, users, and enrollments with r
 
 ## Project Overview
 
-The Course Enrollment Management System is designed to simplify online course management by providing a platform where students, instructors, and administrators can manage courses and enrollment activities.
+The Course Enrollment Management System is a web-based platform that simplifies course management by connecting students, instructors, and administrators.
 
-The system includes:
+The application allows users to manage courses, enrollments, student progress, grading, and approval workflows through role-based dashboards.
 
-- User authentication and authorization
-- Role-based access control
-- Course creation and management
-- Student enrollment management
-- Instructor dashboard
-- Admin approval workflow
-- Student progress and grading management
+
+
+## Live Application
+
+Backend API:
+
+https://course-enrollment-backend-f5ww.onrender.com
+
+Frontend:
+
+https://course-enrollment-management-system-j8y4tx3ts.vercel.app
 
 
 
@@ -27,47 +31,44 @@ The system includes:
 - User registration and login
 - JWT-based authentication
 - Password encryption using bcrypt
-- Role-based access:
+- Role-based access control:
   - Student
   - Instructor
   - Admin
 
 
-## Student Features
 
-Students can:
+## Student Features
 
 - Register and login
 - View available courses
-- Search and explore courses
+- Search courses
 - Enroll in courses
+- Cancel enrollment requests
 - Drop enrolled courses
 - Join course waitlists
-- View enrolled courses
 - Track course progress
+- View grades
 - Download completion certificates
 
 
 
 ## Instructor Features
 
-Instructors can:
-
-- Create new courses
-- Manage their courses
+- Create and manage courses
 - View enrolled students
 - Update student progress
-- Update grades and completion status
+- Manage grades and completion status
 - Export student details as CSV
+
 
 
 ## Admin Features
 
-Admins can:
-
-- Review pending enrollment requests
+- Review enrollment requests
 - Approve or reject requests
-- Manage course and user activities
+- Manage users and courses
+- Monitor platform activities
 
 
 
@@ -96,6 +97,12 @@ Admins can:
 
 - MongoDB Atlas
 
+## Deployment
+
+- Vercel
+- Render
+- MongoDB Atlas
+
 
 
 # Project Structure
@@ -105,6 +112,7 @@ Course_Enrollment_Management_System
 
 │
 ├── backend
+│   ├── config
 │   ├── controllers
 │   ├── models
 │   ├── routes
@@ -126,6 +134,7 @@ Course_Enrollment_Management_System
 ```
 
 
+
 # Installation and Setup
 
 ## Clone Repository
@@ -140,63 +149,36 @@ cd Course_Enrollment_Management_System
 
 # Backend Setup
 
-Navigate to the backend folder:
-
 ```bash
 cd backend
-```
 
-Install dependencies:
-
-```bash
 npm install
 ```
 
-Create a `.env` file inside the backend folder:
+Create `.env` file:
 
 ```env
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+JWT_SECRET=your_secret_key
 PORT=5000
 ```
 
-Start the backend server:
+Run backend:
 
 ```bash
 npm run dev
 ```
 
-Backend will run on:
-
-```
-http://localhost:5000
-```
 
 
 # Frontend Setup
 
-Open another terminal and navigate to frontend:
-
 ```bash
 cd frontend
-```
 
-Install dependencies:
-
-```bash
 npm install
-```
 
-Start the frontend application:
-
-```bash
 npm run dev
-```
-
-Frontend will run on:
-
-```
-http://localhost:5173
 ```
 
 
@@ -207,18 +189,13 @@ http://localhost:5173
 User Browser
 
         |
-        |
 
 React Frontend
-(localhost:5173)
 
-        |
         |
 
 Node.js + Express Backend
-(localhost:5000)
 
-        |
         |
 
 MongoDB Atlas Database
@@ -249,6 +226,7 @@ MongoDB Atlas Database
 | DELETE | /api/courses/:id | Delete course |
 
 
+
 ## Enrollment
 
 | Method | Endpoint | Description |
@@ -263,43 +241,39 @@ MongoDB Atlas Database
 
 # Environment Variables
 
-Sensitive information is not included in the repository.
+The project uses environment variables for sensitive configuration.
 
-The backend uses environment variables for:
-
-- MongoDB connection string
-- JWT secret key
-- Server port configuration
-
-A sample file is provided:
+Required variables:
 
 ```
-.env.example
+MONGO_URI
+JWT_SECRET
+PORT
 ```
+
+The `.env` file is excluded from GitHub.
 
 
 
 # Skills Demonstrated
 
-This project demonstrates:
-
 - Full-stack web development
 - REST API development
-- Database design using MongoDB
+- MongoDB database design
 - Authentication and authorization
 - Role-based access control
 - React component development
 - API integration
-- Cloud database integration
+- Cloud deployment
 
 
 
 # Future Improvements
 
 - Add email notifications
-- Add advanced analytics
+- Add advanced analytics dashboard
 - Improve automated testing
-- Enhance deployment workflow
+- Add additional security features
 
 
 
@@ -310,3 +284,7 @@ Full Stack Web Application
 Built using:
 
 React + Node.js + Express + MongoDB Atlas
+
+Deployed using:
+
+Vercel + Render
