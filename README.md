@@ -24,6 +24,50 @@ https://course-enrollment-management-system-j8y4tx3ts.vercel.app
 
 
 
+## Demo Accounts
+
+Use these accounts to explore different user roles:
+
+### Admin Account
+
+Email:
+admin@test.com
+
+Password:
+csmsriher@123
+
+
+### Instructor Account
+
+Email:
+instructor1@test.com
+
+Password:
+csmsriher@123
+
+Email:
+instructor2@test.com
+
+Password:
+csmsriher@123
+
+
+### Student Account
+
+Email:
+student1@test.com
+
+Password:
+csmsriher@123
+
+Email:
+student2@test.com
+
+Password:
+csmsriher@123
+
+
+
 # Features
 
 ## Authentication and Authorization
