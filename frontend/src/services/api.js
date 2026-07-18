@@ -1,7 +1,7 @@
 import axiosInstance from 'axios';
 
 const api = axiosInstance.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://course-enrollment-backend-f5ww.onrender.com/api',
   headers: {
     'Content-Type': 'application/json'
   }
