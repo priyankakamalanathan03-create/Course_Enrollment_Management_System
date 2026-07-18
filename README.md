@@ -2,7 +2,7 @@
 
 A full-stack web application for managing courses, users, and enrollments with role-based access control. The system provides separate dashboards for Students, Instructors, and Admins with secure authentication and course management features.
 
----
+
 
 ## Project Overview
 
@@ -18,7 +18,7 @@ The system includes:
 - Admin approval workflow
 - Student progress and grading management
 
----
+
 
 # Features
 
@@ -32,7 +32,6 @@ The system includes:
   - Instructor
   - Admin
 
----
 
 ## Student Features
 
@@ -48,7 +47,7 @@ Students can:
 - Track course progress
 - Download completion certificates
 
----
+
 
 ## Instructor Features
 
@@ -61,7 +60,6 @@ Instructors can:
 - Update grades and completion status
 - Export student details as CSV
 
----
 
 ## Admin Features
 
@@ -71,7 +69,7 @@ Admins can:
 - Approve or reject requests
 - Manage course and user activities
 
----
+
 
 # Technology Stack
 
@@ -98,7 +96,7 @@ Admins can:
 
 - MongoDB Atlas
 
----
+
 
 # Project Structure
 
@@ -127,7 +125,6 @@ Course_Enrollment_Management_System
 └── .gitignore
 ```
 
----
 
 # Installation and Setup
 
@@ -139,7 +136,7 @@ git clone <repository-url>
 cd Course_Enrollment_Management_System
 ```
 
----
+
 
 # Backend Setup
 
@@ -175,7 +172,6 @@ Backend will run on:
 http://localhost:5000
 ```
 
----
 
 # Frontend Setup
 
@@ -203,7 +199,7 @@ Frontend will run on:
 http://localhost:5173
 ```
 
----
+
 
 # Application Architecture
 
@@ -228,7 +224,7 @@ Node.js + Express Backend
 MongoDB Atlas Database
 ```
 
----
+
 
 # API Endpoints
 
@@ -240,7 +236,7 @@ MongoDB Atlas Database
 | POST | /api/auth/login | Login user |
 | GET | /api/auth/me | Get current user |
 
----
+
 
 ## Courses
 
@@ -252,7 +248,6 @@ MongoDB Atlas Database
 | PUT | /api/courses/:id | Update course |
 | DELETE | /api/courses/:id | Delete course |
 
----
 
 ## Enrollment
 
@@ -264,7 +259,7 @@ MongoDB Atlas Database
 | GET | /api/enroll/course/:courseId | View course students |
 | PUT | /api/enroll/:enrollmentId | Update enrollment details |
 
----
+
 
 # Environment Variables
 
@@ -282,7 +277,7 @@ A sample file is provided:
 .env.example
 ```
 
----
+
 
 # Skills Demonstrated
 
@@ -297,7 +292,7 @@ This project demonstrates:
 - API integration
 - Cloud database integration
 
----
+
 
 # Future Improvements
 
@@ -306,7 +301,7 @@ This project demonstrates:
 - Improve automated testing
 - Enhance deployment workflow
 
----
+
 
 # Project Type
 
